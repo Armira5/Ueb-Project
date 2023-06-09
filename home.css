@@ -126,6 +126,39 @@
     font-family: "Courier New";
   }
 
+  .photos {
+    display: flex;
+    justify-content: center;
+    width: 500px; /* Adjust the size of each photo container */
+    margin-right: 5px; /* Adjust the spacing between photos */
+    margin-left: 15px;
+    margin-top: -200px;   
+  }
+  
+  .photo:last-child {
+    margin-right: 0; /* Remove right margin from the last photo */
+  }
+  
+  .photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #photo1{
+    width: 950px;
+    margin-left: 20px;
+  }
+  #photo2{
+    width: 950px;
+    margin-left: 20px;
+   
+  }
+  #photo3{
+    width: 950px;
+    margin-left: 20px;
+  }
+ 
+  
 
     footer {
       background-color:  #bcc4f1;
