@@ -6,24 +6,92 @@
   <title>Snowboards, Skis, and Motors</title>
   <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body style="background-color: rgb(240, 236, 244);">
   <header>
+    <div >
+      <img src="./images/logo.png" width="30px" id="logo"alt="Logo">
+    </div>
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="snowboard.html">Snowboard</a></li>
         <li><a href="ski.html">Ski</a></li>
-        <li><a href="motors.html">Motors</a></li>
+        <li><a href="snowmobile.html">Snowmobile</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="content">
-    <h2>Welcome to our Winter Sports Shop!</h2>
-    <p>Explore our wide selection of snowboards, skis, and motors.</p>
-    <p>Get ready for an unforgettable winter adventure!</p>
-  </div>
+  <div class="fillimi"> 
+            
+    <div class="slider">
+<div class="slide active">
+<img src="images/ski1.jpg" id="one" alt="">
+</div>
+<div class="slide">
+<img src="images/snowb1.jpg" id="two" alt="">
+</div>
+<div class="slide">
+<img src="images/snowm1.jpg" id="three" alt="">
+</div>
+<div class="buttons">
+<button id="">></button>
+<button id="nextImgBtn">></button>
+</div>
+</div>
+    <div class="col2">
+        
+        <h1 style="color: rgb(114, 106, 198);">Welcome to our Winter Sports Shop!</h1>
+        <small >
+          Explore our wide selection of snowboards, skis, and motors.<br>
+          Get ready for an unforgettable winter adventure!
+            </small><br><br>
+            <a  class="btn">Buy Now &#8594;</a>
+        </div>
+</div>
+
+
+
+<script>
+var slides = document.querySelectorAll(".slide");
+var nextImgBtn = document.getElementById("nextImgBtn");
+
+var changeImg = (index) => {
+ slides.forEach(img =>{
+     img.classList.remove("active");
+ })
+slides[index].classList.add("active");
+}
+
+var index=0;
+nextImgBtn.addEventListener("click", function(){
+
+if(index<slides.length-1){
+    index++;
+    changeImg(index);
+    
+}else{
+    index=0;
+    changeImg(index);
+}
+
+
+})
+
+setInterval(() => {
+if(index<slides.length-1){
+    index++;
+    changeImg(index);
+    
+}else{
+    index=0;
+    changeImg(index);
+}
+}, 3000);
+</script>
+
 
   <footer>
     <p>&copy; 2023 Snowboards, Skis, and Motors. All rights reserved.</p>

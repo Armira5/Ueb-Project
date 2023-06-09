@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snowboards, Skis, and Motors</title>
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="register.css">
 </head>
 <body>
   <header>
@@ -24,11 +25,18 @@
     </nav>
   </header>
 
-  <div class="content">
-    <h2>Welcome to our Winter Sports Shop!</h2>
-    <p>Explore our wide selection of snowboards, skis, and motors.</p>
-    <p>Get ready for an unforgettable winter adventure!</p>
+  <div class="register-container">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
   </div>
+
+  <script src="register.js"></script>
 
   <footer>
     <p>&copy; 2023 Snowboards, Skis, and Motors. All rights reserved.</p>

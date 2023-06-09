@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snowboards, Skis, and Motors</title>
+  <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -24,11 +25,17 @@
     </nav>
   </header>
 
-  <div class="content">
-    <h2>Welcome to our Winter Sports Shop!</h2>
-    <p>Explore our wide selection of snowboards, skis, and motors.</p>
-    <p>Get ready for an unforgettable winter adventure!</p>
-  </div>
+
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  
+    <script src="login.js"></script>
 
   <footer>
     <p>&copy; 2023 Snowboards, Skis, and Motors. All rights reserved.</p>
