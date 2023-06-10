@@ -64,6 +64,13 @@
   </div>
 </div>
 
+</br>
+
+
+
+
+
+
 </main>
 <script>
 var slides = document.querySelectorAll(".slide");
@@ -101,6 +108,48 @@ if(index<slides.length-1){
     changeImg(index);
 }
 }, 3000);
+
+
+const sliderContainer = document.querySelector('.slider-container');
+const videos = document.querySelectorAll('.slider-container video');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+let currentSlide = 0;
+
+// Hide all videos except the first one
+videos.forEach((video, index) => {
+  if (index !== currentSlide) {
+    video.style.display = 'none';
+  }
+});
+
+// Function to show the current video slide
+function showSlide() {
+  videos.forEach((video, index) => {
+    if (index === currentSlide) {
+      video.style.display = 'block';
+    } else {
+      video.style.display = 'none';
+    }
+  });
+}
+
+// Event listeners for previous and next buttons
+prevBtn.addEventListener('click', () => {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = videos.length - 1;
+  }
+  showSlide();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentSlide++;
+  if (currentSlide >= videos.length) {
+    currentSlide = 0;
+  }
+  showSlide();
+});
 </script>
 
 

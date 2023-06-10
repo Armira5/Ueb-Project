@@ -170,3 +170,19 @@
     footer p {
       font-size: 14px;
     }
+
+
+
+    @media (max-width: 600px) {
+      /* CSS rules for smaller screens */
+    }
+
+    /* CSS for screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* CSS rules for medium screens */
+}
+
+/* CSS for screens larger than 901px */
+@media (min-width: 901px) {
+  /* CSS rules for larger screens */
+}
