@@ -26,12 +26,198 @@
 
   <div class="content">
     <h2>Welcome to our Winter Sports Shop!</h2>
-    <p>Explore our wide selection of snowboards, skis, and motors.</p>
-    <p>Get ready for an unforgettable winter adventure!</p>
+    
   </div>
 
+  <body>
+    <div class="photo-container">
+        <img src="images/board.jpg" alt="Photo 1">
+        <img src="images/board2.jpeg" alt="Photo 2">
+        <img src="images/board3.jpeg" alt="Photo 3">
+    </div>
+</body>
+
+</br>
+
+<main>
+
+
+
+<section class="product">
+  
+  <img src="images/boots.jpg" alt="Product 1">
+  <p class="description">Snowboards</p>
+  <p class="price">$19.99</p>
+  <button onclick="addToCart(1)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/boots1.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/jacket.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/helmet.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/sock.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/pants.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+
+  
+</section>
+
+<section class="product">
+  
+    <img src="images/bag.jpg" alt="Product 2">
+    <p class="description">Snowboard boots</p>
+    <p class="price">$24.99</p>
+    <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+<section class="product">
+  
+  <img src="images/hat.jpg" alt="Product 2">
+  <p class="description">Snowboard boots</p>
+  <p class="price">$24.99</p>
+  <button onclick="addToCart(2)">Add to Cart</button>
+
+  
+</section>
+
+<section class="product">
+  
+    <img src="images/kids.jpg" alt="Product 2">
+    <p class="description">Snowboard boots</p>
+    <p class="price">$24.99</p>
+    <button onclick="addToCart(2)">Add to Cart</button>
+</section>
+
+</main>
   <footer>
     <p>&copy; 2023 Snowboards, Skis, and Motors. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
+<style>
+  
+    
+
+    .photo-container {
+        display: flex;
+        
+
+    }
+    .photo-container img {
+        width: 33.33%;
+        transition: transform 0.3s;
+    }
+    .photo-container img:hover {
+        transform: scale(1.1);
+    }
+
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+
+.product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.product h2 {
+    font-size: 20px;
+}
+
+
+
+.product .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#cart {
+    background-color: #f0f0f0;
+    width: 300px;
+}
+
+#cart h2 {
+    font-size: 18px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+
+
+
+</style>
