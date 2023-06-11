@@ -28,6 +28,31 @@
     <img src="images/foto4.jpg" alt="Përshkrimi i fotos">
   </div>
 
+  <h1 class="title">Meet our Team</h1>
+  <div class="container">
+    
+
+
+    <div class="card">
+      <img src="images/personi.jpg" alt="Foto 1">
+     
+    </div>
+  
+    <div class="card">
+      <img src="images/personi1.jpg" alt="Foto 2">
+      
+    </div>
+  
+    <div class="card">
+      <img src="images/personi2.jpg" alt="Foto 3">
+      
+    </div>
+  </div>
+
+  <div>
+    <h1>Medina</h1>
+  </div>
+
  <footer>
     <p>&copy; 2023 Snowboards, Skis, and Motors. All rights reserved.</p>
   </footer>
@@ -45,4 +70,49 @@
     width: 100%;
     height: auto;
 }
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100vh;
+      background-color: whitesmoke;
+    }
+    
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 20px;
+      width: 300px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      background-color: lightblue;
+    }
+    .title {
+      font-size: 40px;
+      
+      text-align: center;
+      background-color: whitesmoke;
+      color:#bcc4f1;
+    }
+    
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .card p {
+      font-size: 16px;
+      color: #666;
+    }
 </style>
