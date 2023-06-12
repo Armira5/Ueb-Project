@@ -186,3 +186,55 @@
 @media (min-width: 901px) {
   /* CSS rules for larger screens */
 }
+
+/*css slider*/
+
+.slidervideo {
+  width: 70%; 
+  margin: 0 auto;
+
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides video {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+
+
+button.prev, button.next {
+  background-color: #eaeaea;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.controls button {
+  background-color: #eaeaea;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #333;
+  color: #fff;
+}
