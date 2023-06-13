@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+            <img src="./images/logo.png" width="30px" id="logo"alt="Logo">
+        </div>
+        <div class="contact-info">
+          <h4>Contact Us</h4>
+          <p>Email: info@skiwebsite.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Ski Website. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+<script>
+    // Use JavaScript to fetch and insert the footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-container').innerHTML = html;
+      });
+  </script>
+
+</body>
+</html>
+
+  
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.contact-info h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+  </style>
