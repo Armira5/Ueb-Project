@@ -24,27 +24,45 @@
     </nav>
   </header>
 
-  <div class="content">
-    <h2>Welcome to our Winter Sports Shop!</h2>
-    <p>Explore our wide selection of snowboards, skis, and motors.</p>
-    <p>Get ready for an unforgettable winter adventure!</p>
-  </div>
+  <h1>Snowmobiles</h1>
+  
+  <div class="snowmobile">
+    <h2>Model 1</h2>
+    <img src="./images/snowmobile1.png" alt="Snowmobile 1">
+    <video controls width="400">
+      <source src="snowmobilevideo1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      Super motion shot of an unrecognizable person speeding with a snowmobile through the snow somewhere in Norway
+    </p>
+</div>
 
-  <div class="slider">
-    <div class="slide active">
-    <img src="images/ski1.jpg" id="one" alt="">
-    </div>
-    <div class="slide">
-    <img src="images/snowb1.jpg" id="two" alt="">
-    </div>
-    <div class="slide">
-    <img src="images/snowm1.jpg" id="three" alt="">
-    </div>
-    <div class="buttons">
-    <button id="">></button>
-    <button id="nextImgBtn">></button>
-    </div>
-    </div>
+<div class="snowmobile">
+    <h2>Model 2</h2>
+    <img src="./images/snowmobile2.png" alt="Snowmobile 2">
+    <video controls width="400">
+      <source src="snowmobile.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      Riding a Snowmobile in the Mountains of Canada.
+    </p>
+</div>
+
+<div class="snowmobile">
+    <h2>Model 3</h2>
+    <img src="./images/snowmobile3.png" alt="Snowmobile 3">
+    <audio controls>
+      <source src="audio.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <p>
+      This is an audio of model 3.
+    </p>
+</div>
+
+</body>
 
   
   
@@ -54,5 +72,33 @@
 
 </html>
 <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .snowmobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .snowmobile img,
+  .snowmobile video {
+    max-width: 50%;
+  }
+  
+  .snowmobile audio {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .snowmobile p,h2,h1 {
+    font-family: 'Pushster',cursive;
+      font-size: 1em;
+      text-shadow: 5px 5px 10px #111;
+  }
+</style>
 </style>
