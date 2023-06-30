@@ -5,6 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snowboards, Skis, and Motors</title>
   <link rel="stylesheet" href="home.css">
+  <style>
+    .foto1 img {
+      max-height: 350px;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100vh;
+      background-color: whitesmoke;
+    }
+
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 20px;
+      width: 300px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      background-color: lightblue;
+    }
+
+    .title {
+      font-size: 40px;
+      text-align: center;
+      background-color: whitesmoke;
+      color: #bcc4f1;
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Slider style */
+    .sliderrr {
+      width: 800px;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .sliderrr img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .sliderrr input {
+      display: none;
+    }
+
+    .sliderrr input:checked + img {
+      opacity: 1;
+    }
+
+    .sliderrr-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .sliderrr-nav label {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: none;
+      background-color: gray;
+      cursor: pointer;
+    }
+
+    .sliderrr-nav label:hover {
+      background-color: black;
+    }
+
+    .sliderrr input:checked + .sliderrr-nav label {
+      background-color: black;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -48,6 +152,22 @@
       
     </div>
   </div>
+  <div class="sliderrr">
+    <input type="radio" name="sliderrr" id="slide1" checked>
+    <img src="./images/snowboardddddddd.png" alt="Photo 1">
+    
+    <input type="radio" name="sliderrr" id="slide2">
+    <img src="./images/ski.jpg" alt="Photo 2">
+    
+    <input type="radio" name="sliderrr" id="slide3">
+    <img src="./images/slide-performance-snowmobile-skis.jpg" alt="Photo 3">
+  </div>
+  
+  <div class="sliderrr-nav">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
 
 <div class="video">
   <video controls width="100%" height="auto">
@@ -57,7 +177,23 @@
 </div>
 <iframe src="footer.html" frameborder="2" scrolling="no" width="100%" height="200"></iframe>
   
-  
+<script>
+  // JavaScript code for automatic sliding
+  function startSlider() {
+    const slides = document.querySelectorAll('.sliderrr input[type="radio"]');
+    let index = 0;
+
+    function showSlide() {
+      slides[index].checked = true;
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+  }
+
+  // Start the slider when the page has finished loading
+  window.addEventListener('load', startSlider);
+</script>
  
 </body>
 
@@ -65,60 +201,3 @@
 
 </html>
 
-<style>
-  .foto1 img{
-    max-height: 350px;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-
-.container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      height: 100vh;
-      background-color: whitesmoke;
-    }
-    
-    .card {
-      border-radius: 20px;
-      overflow: hidden;
-      padding: 20px;
-      width: 300px;
-      margin: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      background-color: lightblue;
-    }
-    .title {
-      font-size: 40px;
-      
-      text-align: center;
-      background-color: whitesmoke;
-      color:#bcc4f1;
-    }
-    
-    .card img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-    
-    .card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    
-    .card p {
-      font-size: 16px;
-      color: #666;
-    }
-
-    /*video style*/
-    
-   
-</style>
