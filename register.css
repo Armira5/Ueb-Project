@@ -6,6 +6,9 @@ body {
   .register-container {
     max-width: 300px;
     margin: 0 auto;
+    margin-left: 850px;
+    margin-top: 200px;
+    margin-bottom: -500px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -28,7 +31,7 @@ body {
   form button {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
+    background-color: rgba(191, 183, 242, 0.8);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -36,6 +39,6 @@ body {
   }
   
   form button:hover {
-    background-color: #45a049;
+    background-color: rgba(191, 183, 242, 0.8);
   }
   
